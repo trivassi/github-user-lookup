@@ -19,18 +19,11 @@ User.prototype.getRepos = function () {
   return $.get('https://api.github.com/users/' + this.username + '/repos?access_token=' + apiKey).then(function (response) {
     return response;
   }).fail(function(error) {
-    $('#ghapidata').text(error.responseJSON.message);
+    $('#user-return').text(error.responseJSON.message);
   });
 };
 
-// function requestJSON(url, callback) {
-//    $.ajax({
-//      url: url,
-//      complete: function(xhr) {
-//        callback.call(null, xhr.responseJSON);
-//      }
-//    });
-//  }
+
 
 exports.userModule = User;
 //exports.namedoesntmatter = nameofObject
