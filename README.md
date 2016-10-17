@@ -1,27 +1,42 @@
-After cloning:
-- bower install
-- npm install
-- npm install browser-sync --save-dev
-- gulp bowerJS to create vendor.min.js
+# _GitHub User Lookup_
 
-to run: gulp serve
+#### _Lets users search for GitHub profiles based on the username of the account._
 
-terminal commands: 
+#### By _**Thomas Rivas**_
 
-npm init
-npm install gulp --save-dev
-npm install browserify --save-dev
-npm install vinyl-source-stream --save-dev
-npm install gulp-concat --save-dev
-npm install gulp-uglify --save-dev
-npm install gulp-util --save-dev
-npm install del --save-dev
-npm install jshint --save-dev
-npm install gulp-jshint --save-dev
-npm install bower -g
-bower init
-bower install jquery --save
-bower install
-bower install bootstrap --save
-bower install moment --save
-npm install bower-files --save-dev
+## Description
+
+#### _Lets users search for GitHub profiles based on the username of the account. It will return the name, and description of repo._
+
+
+## Setup/Installation Requirements
+
+* _Clone this repository_
+* _Open in your text editor of choice_
+* _In the comman line write bower install and npm install after cloning_
+* _In command line write gulp build to compile and gulp serve to run on browser_
+
+
+## Known Bugs
+
+_{No know bugs at the time}_
+
+## Technologies Used
+
+* _Java_
+* _Gradle_
+* _Velocity Template Engine_
+* _Postgres_
+* _PSQL_
+
+
+
+### License
+
+Copyright (c) 2016 **_Thomas Rivas_**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
