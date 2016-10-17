@@ -12,13 +12,14 @@ $(document).ready(function() {
         console.log(username);
 //callback
         user.getRepos().then(function (response) {
-           $(".user-return").append('<h2>Total Repositories :" >'+response.length+'</h2>');
+           $(".user-return").append('<h2>'+ username + "'s Repos" + '</h2>');
            console.log(response);
 
            response.forEach(function (objRepo) {
-                   $(".user-return").append("<h4>" +  objRepo.html_url+ "</h4>" + "<ul>" + "<li>" + objRepo.name + objRepo.description + "</li> </ul>" );
+                   $(".user-return").append("<h4>" +  objRepo.html_url+ "</h4>" + "<ul>" + "<li>" + "Repo Name: " + objRepo.name + " , Description: " + objRepo.description + "</li> </ul>" );
                });
              });
+
 // https://api.github.com
 
   });
