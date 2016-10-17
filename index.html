@@ -2,19 +2,40 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
     <title>GitHub User Lookup</title>
   </head>
   <body>
     <div class="container">
-      <h1>GitHub User Lookup</h1>
-      <form id="search">
-        <label for="username">Enter Username you are searching for:</label>
-        <input id="username" type="text">
-        <button type="submit">Submit</button>
+      <div class="header">
+        <h1>GitHub User Lookup</h1>
+      </div>
+      <form id="search" class="form-inline">
+        <div class="form-group">
+          <label for="username">Enter Username you are searching for:</label>
+          <input id="username" type="text" class="form-control">
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
       </form>
-      <div class="user-return">
+      <div class="panel panel-default" id="results">
+        <div class="panel-heading">
+          <h3 class="panel-title"></h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <!-- <div class="col-md-1">
+            </div> -->
+            <div class="col-md-6 user-return">
+            </div>
+            <div class="col-md-6 user-profile text-center">
+            </div>
+            <!-- <div class="col-md-1">
+            </div> -->
+          </div>
+        </div>
       </div>
     </div>
   </body>

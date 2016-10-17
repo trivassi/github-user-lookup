@@ -1,26 +1,11 @@
-body {
-    /*font-family: 'Oswald', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;*/
-    font-family: 'Roboto', sans-serif;
-    background-color: #ccc;
+#search {
+margin-bottom: 30px;
 }
 
-.form-login {
-    background-color: white;
-    padding: 5px 20px;
-    margin-top: 10%;
-    border: 1px #777 solid;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+.header {
+margin-bottom: 40px;
 }
 
-.repository {
-    border: 1px #777 solid;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    margin-bottom: 10px;
+#results{
+  display: none;
 }
