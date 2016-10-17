@@ -7,14 +7,16 @@ $(document).ready(function() {
     event.preventDefault();
 
         var username = $('#username').val(),
-        user = new userModule(username);
+        user = new User(username);
         $('#username').val("");
-
+        console.log(username);
+//callback
         user.getRepos().then(function (response) {
-           $("#user-return").append('<h2>Total Repositories :" >'+response.length+'</h2>');
+           $(".user-return").append('<h2>Total Repositories :" >'+response.length+'</h2>');
+           console.log(response);
 
            response.forEach(function (objRepo) {
-                   $("#user-return").append("h4>" +  objRepo.html_url+ "</h4>" + "<ul>" + "<li>" + objRepo.name + objRepo.description + "</li> </ul>" );
+                   $(".user-return").append("<h4>" +  objRepo.html_url+ "</h4>" + "<ul>" + "<li>" + objRepo.name + objRepo.description + "</li> </ul>" );
                });
              });
 // https://api.github.com
