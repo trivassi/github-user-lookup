@@ -14,7 +14,10 @@ $(document).ready(function() {
         console.log(username);
 //callback
         user.getRepos().then(function (response) {
-           $(".panel-title").append(username + "'s Repos");
+          $(".panel-title").empty();
+          $(".user-profile").empty();
+          $(".user-return").empty();
+          $(".panel-title").append(username + "'s Repos");
            console.log(response);
 
            $(".user-profile").append("<p><img src='" + response[0].owner.avatar_url + "' alt='profile-picture'/></p><p><a class='btn btn-default' href="+ response[0].owner.html_url +" role='button'>Go to Github profile</a></p>");
