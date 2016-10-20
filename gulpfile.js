@@ -23,11 +23,6 @@ var lib = require('bower-files')({
 var browserSync = require('browser-sync').create();
 
 
-
-//CALLBACK FUNCTION
-//gulp.task(name, function(){
-// });
-
 gulp.task('serve', function() {
   browserSync.init({
     server: {
@@ -104,11 +99,3 @@ gulp.task("build", ['clean'], function(){
   }
   gulp.start('bower');
 });
-
-// gulp.task("build", function(){
-//   if (buildProduction) {
-//     gulp.start('minifyScripts');
-//   } else {
-//     gulp.start('jsBrowserify');
-//   }
-// });

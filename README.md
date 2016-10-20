@@ -15,6 +15,9 @@
 * _Open in your text editor of choice_
 * _In the comman line write bower install and npm install after cloning_
 * _In command line write gulp build to compile and gulp serve to run on browser_
+* _To make sure code works as intended download own API key from GitHub_
+* _Once API key is obtained include it in a .env file in the top level of your directory and use it as such:
+exports.apiKey = “your key here”;_
 
 
 ## Known Bugs
@@ -23,11 +26,13 @@ _{No know bugs at the time}_
 
 ## Technologies Used
 
-* _Java_
-* _Gradle_
-* _Velocity Template Engine_
-* _Postgres_
-* _PSQL_
+* _JavaScript_
+* _HTML_
+* _CSS_
+* _JQuery_
+* _JavaScript_
+* _GitHub API_
+* _Git_
 
 
 
